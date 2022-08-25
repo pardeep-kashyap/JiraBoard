@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JiraBoard/static/css/main.1b1c4ba7.css",
+    "main.js": "/JiraBoard/static/js/main.357e32f9.js",
+    "static/js/787.97a945da.chunk.js": "/JiraBoard/static/js/787.97a945da.chunk.js",
+    "index.html": "/JiraBoard/index.html",
+    "main.1b1c4ba7.css.map": "/JiraBoard/static/css/main.1b1c4ba7.css.map",
+    "main.357e32f9.js.map": "/JiraBoard/static/js/main.357e32f9.js.map",
+    "787.97a945da.chunk.js.map": "/JiraBoard/static/js/787.97a945da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b1c4ba7.css",
+    "static/js/main.357e32f9.js"
+  ]
+}
