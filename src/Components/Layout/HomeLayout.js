@@ -1,4 +1,6 @@
 import {
+    AppstoreAddOutlined,
+    HomeOutlined,
     MenuFoldOutlined,
     MenuUnfoldOutlined,
     UserOutlined,
@@ -40,12 +42,12 @@ export default function HomeLayout() {
                     items={[
                         {
                             key: '/',
-                            icon: <UserOutlined />,
+                            icon: <HomeOutlined />,
                             label: 'Home',
                         },
                         {
                             key: '/task',
-                            icon: <VideoCameraOutlined />,
+                            icon: <AppstoreAddOutlined />,
                             label: 'Add new',
                         },
                     ]}
