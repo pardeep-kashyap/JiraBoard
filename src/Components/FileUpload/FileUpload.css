@@ -1,0 +1,100 @@
+/*
+File upload
+*/
+
+.ant-upload.ant-upload-drag .ant-upload {
+    padding: 16px;
+}
+
+.ant-upload.ant-upload-drag {
+    padding: 50px;
+}
+
+.ant-upload-list-item {
+    position: relative;
+    height: 66px;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-info {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-info:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    opacity: 0;
+    transition: all .3s;
+    content: " ";
+}
+
+.ant-upload-list-item-info>span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.ant-upload-list {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000000d9;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    line-height: 1.5715;
+}
+
+.ant-upload-list-picture-card-container {
+    width: 104px;
+    height: 104px;
+    margin: 0 8px 8px 0;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(122, 153, 217)),
+            color-stop(0.72, rgb(73, 125, 189)),
+            color-stop(0.86, rgb(28, 58, 148)));
+}
+
+.action {
+    display: none;
+    width: 55px;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.action:hover {
+    display: flex;
+}
+
+.image-view:hover+.action {
+    display: flex;
+    cursor: pointer;
+}
