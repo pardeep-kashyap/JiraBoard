@@ -60,11 +60,9 @@ function AddNewTask(props) {
         tasks[data.status] = status;
         dispatch(updateTask(
             {
-                taskType: data.status,
                 task: tasks
             }
         ))
-        localStorage.setItem('tasks', JSON.stringify(tasks));
         navigate('/', { replace: true });
     }
 
@@ -81,7 +79,6 @@ function AddNewTask(props) {
                     task: tempState
                 }
             ))
-            localStorage.setItem('tasks', JSON.stringify(tempState))
         }
     }
 

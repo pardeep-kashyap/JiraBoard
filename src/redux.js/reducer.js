@@ -21,6 +21,7 @@ export const taskReducer = (state = tasks, action) => {
             tempState[state.currentTaskType][state.currentIndex] = action.payload;
             return tempState;
         case 'UPDATE_TASK':
+            localStorage.setItem('tasks', JSON.stringify(action.payload.task))
             return JSON.parse(JSON.stringify(action.payload.task));
         case 'REMOVE_TODO':
             tempState[state.currentTaskType] = tempState[state.currentTaskType].splice(state.currentIndex, 0);

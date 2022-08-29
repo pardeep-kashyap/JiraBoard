@@ -4,6 +4,8 @@ import { DragDropContext } from "react-beautiful-dnd";
 import DraggableElement from "./DraggableElement";
 import { useSelector } from "react-redux";
 import { TASK_STATES } from "./redux.js/reducer";
+import { useDispatch } from 'react-redux';
+import { updateTask } from "./redux.js/action";
 
 const DragDropContextContainer = styled.div`
   padding: 20px;
@@ -30,6 +32,7 @@ const addToList = (list, index, element) => {
 
 function DragList() {
     const state = useSelector((state) => state);
+    const dispatch = useDispatch()
 
     const [elements, setElements] = React.useState([]);
 
@@ -55,6 +58,12 @@ function DragList() {
             result.destination.index,
             removedElement
         );
+
+        dispatch(updateTask(
+            {
+                task: listCopy
+            }
+        ))
         setElements(listCopy);
     };
 
