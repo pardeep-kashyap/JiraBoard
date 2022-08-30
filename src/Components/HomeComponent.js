@@ -8,9 +8,9 @@ export default function HomeComponent() {
     return (
         <>
             <div className="w-full flex flex-col">
-                <div className="w-full  flex justify-between	">
-                    <h1 className="inline flex items-center text-3xl pl-4	 font-bold text-gray-600	">Board</h1>
-                    <NavLink className="cursor-pointer	ant-btn ant-btn-primary" style={{
+                <div className="w-full flex justify-between">
+                    <h1 className="inline flex items-center text-3xl pl-4 font-bold text-gray-600">Board</h1>
+                    <NavLink className="cursor-pointer ant-btn ant-btn-primary" style={{
                         padding: '10px',
                         margin: '30px',
                     }} to="/task" onClick={() => dispatch(setCurrentData(
