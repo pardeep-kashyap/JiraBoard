@@ -119,8 +119,7 @@ function AddNewTask(props) {
                                 <div className="mb-5">
                                     <label htmlFor="status" className="block mb-2 font-bold text-gray-600">Status</label>
                                     <select id="status" name="status"  {...register("status", { required: true, maxLength: 80 })} className="form-select appearance-none block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Status">
-                                        <option defaultValue>Open this select status</option>
-                                        <option value="todo">To do</option>
+                                        <option value="todo" defaultValue>To do</option>
                                         <option value="inProgress" >In Progress</option>
                                         <option value="done">Done</option>
                                         <option value="hodel" >Hold</option>
