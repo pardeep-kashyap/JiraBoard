@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+Sample JIRA Board Implementation with tailwind css
+
+## Screen Shot
+
+<img width="966" alt="image" src="https://user-images.githubusercontent.com/20381430/209130245-795eb025-a57b-4fd5-b509-7bc9737f4760.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/20381430/209130603-92d7c4c5-673d-415e-a684-e742a1f9d11c.png">
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Screen Shot
 ## Available Scripts
 
 In the project directory, you can run:
